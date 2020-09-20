@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
         <head>
@@ -9,14 +8,10 @@
         <body>
                 <h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
                 <h1>myMovies Xpress!</h1>
-
-
 <?php if(count($movies) == 0) { ?> 
         <p>Add some movies to your shopping cart.</p>
         <input type="button" value="Add Movie" onclick="window.location.href='./search.php'" />
         <input type="button" value="Checkout" onclick="javascript: confirmCheckout()" />
-
-
 <?php } else if(count($movies) >= 1){ ?> 
         <p>There are currently <?php echo count($movies); ?> movies in your shopping cart.</p>
         <?php foreach($movies as $movieId) { ?>
@@ -38,8 +33,6 @@
         <?php } ?> 
 
 <?php } ?> 
-
-
                 <div id='modalWindow' class='modal'>
                         <div id='modalWindowContent' class='modal-content'>
                         </div>
