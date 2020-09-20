@@ -12,7 +12,6 @@ require_once '/home/common/php/p4Functions.php'; // Add Project 4 base functions
 
 processPageRequest(); // Call the processPageRequest() function
 
-// DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE
 
 function addMovieToCart($imdbID)
 {       
